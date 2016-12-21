@@ -1,0 +1,48 @@
+body {
+  background: #FFE1AD;
+}
+
+.header {
+  background: #FFF;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.header .container-fluid {
+  max-width: 1000px;
+}
+
+.search-form {
+  width: calc(100% + 30px);
+  margin-left: -15px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.search-form .form-group {
+  padding-left: 0;
+  padding-right: 15px;
+  width: 84%;
+}
+
+.search-form input.form-control {
+  width: 100%;
+}
+
+.search-form .btn {
+  width: 15%;
+}
+
+.questions-filter {
+  margin-top: 15px;
+}
+
+.questions-sorting {
+  margin-right: 0;
+}
+
+.add-question-btn {
+  font-size: 23px;
+  color: #0266B3;
+  font-weight: 600;
+}

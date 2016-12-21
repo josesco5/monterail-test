@@ -7,8 +7,59 @@
     <title>Monterail Test</title>
 
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
   </head>
   <body>
+    <!-- Header with filter and sorting functions -->
+    <nav class="navbar navbar-default header">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#questions-navbar-collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">QUESTIONS</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="questions-navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#">
+                <span class="glyphicon glyphicon-plus-sign add-question-btn"></span>
+              </a>
+            </li>
+          </ul>
+
+          <p class="navbar-text navbar-right questions-sorting">
+            Sort by:
+            <a href="#" class="navbar-link">recent</a> or
+            <a href="#" class="navbar-link">hot</a>
+          </p>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="radio questions-filter">
+              <label class="radio-inline">
+                <input type="radio" name="questionsFilter" id="inlineRadio1" value="my_shelf"> My shelf
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="questionsFilter" id="inlineRadio2" value="all"> All questions
+              </label>
+            </li>
+          </ul>
+
+          <form class="navbar-form navbar-left search-form">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search questions">
+            </div>
+            <button type="submit" class="btn btn-default">SEARCH</button>
+          </form>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
     <h1>Hello, world!</h1>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
