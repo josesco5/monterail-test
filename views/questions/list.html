@@ -1,0 +1,125 @@
+<!-- Header with filter and sorting functions -->
+<nav class="navbar navbar-default header">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#questions-navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">QUESTIONS</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="questions-navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="#">
+            <span class="glyphicon glyphicon-plus-sign add-question-btn"></span>
+          </a>
+        </li>
+      </ul>
+
+      <p class="navbar-text navbar-right questions-sorting">
+        Sort by:
+        <a href="#" class="navbar-link">recent</a> or
+        <a href="#" class="navbar-link">hot</a>
+      </p>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="radio questions-filter">
+          <label class="radio-inline">
+            <input type="radio" name="questionsFilter" id="inlineRadio1" value="my_shelf"> My shelf
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="questionsFilter" id="inlineRadio2" value="all"> All questions
+          </label>
+        </li>
+      </ul>
+
+      <form class="navbar-form navbar-left search-form">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search questions">
+        </div>
+        <button type="submit" class="btn btn-default">SEARCH</button>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="content">
+  <div class="questions">
+    <div class="container question">
+      <div class="row">
+        <div class="col-sm-9 info">
+          <div class="row">
+            <div class="col-sm-2 avatar">
+              <a href="#">
+                <img src="http://lorempixel.com/124/125/business/7/cc" class="img-circle">
+              </a>
+            </div>
+            <div class="col-sm-10">
+              <p><a href="#" class="author">Eva</a> is asking:</p>
+              <p><a href="#" class="title">Will insulin make my patient gain weight?</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-9">
+          <div class="row">
+            <div class="col-sm-2 asked">
+              <p>ASKED</p>
+            </div>
+            <div class="col-sm-2 activity more-activities">
+              <div class="box">
+                <p class="total">3</p>
+                <p class="type">more activities</p>
+              </div>
+            </div>
+            <div class="col-sm-2 activity">
+              <div class="box">
+                <a href="#">
+                  <img src="http://lorempixel.com/124/125/business/6/cc" class="img-circle avatar">
+                </a>
+                <p class="type">COMMENTED</p>
+              </div>
+            </div>
+            <div class="col-sm-2 activity">
+              <div class="box">
+                <a href="#">
+                  <img src="http://lorempixel.com/124/125/business/9/cc" class="img-circle avatar">
+                </a>
+                <p class="type">COMMENTED</p>
+              </div>
+            </div>
+            <div class="col-sm-2 activity">
+              <div class="box">
+                <a href="#">
+                  <img src="http://lorempixel.com/124/125/business/1/cc/" class="img-circle avatar">
+                </a>
+                <p class="type">COMMENTED</p>
+              </div>
+            </div>
+            <div class="col-sm-2 activity answer">
+              <div class="box">
+                <a href="#">
+                  <img src="http://lorempixel.com/124/125/business/4/cc" class="img-circle avatar">
+                </a>
+                <p class="type">ANSWERED</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="summary">
+            <p><span class="total">1</span> related discussion</p>
+            <p><span class="total">6</span> peers involved</p>
+            <p><span class="total">3</span> conversations</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
