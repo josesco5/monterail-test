@@ -2,6 +2,10 @@ body {
   background: #FFE1AD;
 }
 
+.container {
+  width: 100%;
+}
+
 .header {
   background: #FFF;
   width: 100%;
