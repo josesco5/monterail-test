@@ -29,15 +29,16 @@
 
 .question .info .author {
   color: #026DCE;
-  font-size: 11pt;
+  font-size: 12pt;
   font-weight: bold;
 }
 
 .question .info .title {
   color: #026DCE;
-  font-size: 12pt;
+  font-size: 13pt;
   font-weight: bold;
   font-style: italic;
+  font-family: 'PT Serif', serif;
 }
 
 .question .asked {
@@ -115,6 +116,7 @@
 }
 
 .question .activity.more-activities .type {
+  font-family: 'PT Serif', serif;
   font-weight: bold;
   font-size: 11pt;
   font-style: italic;
@@ -128,6 +130,7 @@
   font-style: italic;
   color: #000;
   font-weight: bold;
+  font-family: 'PT Serif', serif;
 }
 
 .question .summary p {
@@ -135,6 +138,7 @@
 }
 
 .question .summary p .total {
+  font-family: initial;
   font-style: initial;
   width: 50px;
   text-align: right;
