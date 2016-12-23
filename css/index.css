@@ -15,6 +15,14 @@ body {
 
 .header .container-fluid {
   max-width: 1000px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.header .navbar-brand {
+  font-size: 20pt;
+  font-weight: bold;
+  color: #000;
 }
 
 .search-form {
@@ -26,24 +34,55 @@ body {
 
 .search-form .form-group {
   padding-left: 0;
-  padding-right: 15px;
-  width: 84%;
+  padding-right: 0;
+  width: 75%;
 }
 
 .search-form input.form-control {
   width: 100%;
+  border: 0;
+  border-radius: 0;
+  background: #FBFBFB;
 }
 
 .search-form .btn {
-  width: 15%;
+  width: 20%;
+  float: right;
+  border-radius: 0;
+  color: #A394A5;
+  font-weight: bold;
+  border-color: #A7A9AC;
 }
 
 .questions-filter {
   margin-top: 15px;
 }
 
+.questions-filter label {
+  font-weight: bold;
+}
+
 .questions-sorting {
-  margin-right: 0;
+  width: 25%;
+  text-align: right;
+  font-family: 'PT Serif', serif;
+  color: #000;
+}
+
+.questions-sorting .navbar-link {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  color: #0266B3;
+  margin-left: 5px;
+}
+
+.questions-sorting .navbar-link:first-child {
+  margin-right: 5px;
+}
+
+.questions-sorting .navbar-link.active {
+  color: #A394A5;
+  text-decoration: underline;
 }
 
 .add-question-btn {
@@ -55,6 +94,7 @@ body {
 .content {
   background-color: #FBFBFB;
   min-height: calc(100vh - 120px);
-  margin: 0 40px;
+  margin: 0 auto;
+  max-width: 1260px;
   box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.2);
 }
