@@ -54,7 +54,7 @@ body {
 
 .content {
   background-color: #FBFBFB;
-  height: calc(100vh - 120px);
+  min-height: calc(100vh - 120px);
   margin: 0 40px;
   box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.2);
 }

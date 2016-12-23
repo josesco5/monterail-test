@@ -144,3 +144,15 @@
   text-align: right;
   display: inline-block;
 }
+
+.more-questions {
+  display: inline-block;
+  margin: 30px;
+  color: #DC1763;
+  font-size: 12pt;
+}
+
+.more-questions:hover,
+.more-questions:focus {
+  color: #DC1763;
+}
