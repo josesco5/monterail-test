@@ -8,6 +8,11 @@ angular
         url: '/',
         templateUrl: 'views/questions/list.html',
         controller: 'QuestionsListCtrl'
+      })
+      .state('question',{
+        url: '/question/:id',
+        templateUrl: 'views/questions/detail.html',
+        controller: 'QuestionDetailCtrl'
       });
 
     $urlRouterProvider.otherwise('/');

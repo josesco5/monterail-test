@@ -1,3 +1,5 @@
+/**** Questions list ****/
+
 .questions {
   max-width: 1000px;
   height: 100%;
@@ -12,7 +14,8 @@
   border-bottom: 1px solid #E5E5E5;
 }
 
-.question .info {
+.question .info,
+.question .user-actions {
   height: 80px;
   background: #DFF3FD;
   padding-top: 10px;
@@ -27,7 +30,8 @@
   width: 60px;
 }
 
-.question .info .author {
+.question .info .author,
+.question .user-actions .following {
   color: #026DCE;
   font-size: 12pt;
   font-weight: bold;
@@ -42,7 +46,7 @@
 }
 
 .question .asked {
-  height: 190px;
+  min-height: 190px;
   background: #DFF3FD;
 }
 
@@ -156,3 +160,64 @@
 .more-questions:focus {
   color: #DC1763;
 }
+
+/**** End - Questions list ****/
+
+/**** Question detail ****/
+
+.question-detail {
+  max-width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.2);
+}
+
+.question-detail .question {
+  background: #FFF;
+  padding-bottom: 0;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.question .user-actions {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.question .description {
+  padding-top: 15px;
+  color: #000;
+}
+
+.question .votes {
+  text-align: center;
+  padding-top: 15px;
+  color: #000;
+  font-family: 'PT Serif', serif;
+  font-weight: bold;
+}
+
+.question .votes .total {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.question .votes .actions {
+  width: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 20px;
+  color: #0266B3;
+}
+
+.question .new-answer {
+  position: absolute;
+  left: 43%;
+  bottom: -20px;
+  padding: 10px;
+  border: 1px solid #E5E5E5;
+  border-radius: 0;
+  font-weight: bold;
+  color: #000;
+}
+
+/**** End - Question detail ****/

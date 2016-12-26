@@ -85,6 +85,12 @@ body {
   text-decoration: underline;
 }
 
+.header .last-time-discussed {
+  font-family: 'PT Serif', serif;
+  font-style: italic;
+  color: #000;
+}
+
 .add-question-btn {
   font-size: 23px;
   color: #0266B3;
