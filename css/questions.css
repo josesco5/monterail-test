@@ -31,7 +31,8 @@
 }
 
 .question .info .author,
-.question .user-actions .following {
+.question .user-actions .following,
+.answer .info .author {
   color: #026DCE;
   font-size: 12pt;
   font-weight: bold;
@@ -169,7 +170,6 @@
   max-width: 1000px;
   height: 100%;
   margin: 0 auto;
-  box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.2);
 }
 
 .question-detail .question {
@@ -177,6 +177,7 @@
   padding-bottom: 0;
   margin-bottom: 30px;
   position: relative;
+  box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.2);
 }
 
 .question .user-actions {
@@ -189,6 +190,7 @@
   color: #000;
 }
 
+.answer .votes,
 .question .votes {
   text-align: center;
   padding-top: 15px;
@@ -197,10 +199,12 @@
   font-weight: bold;
 }
 
+.answer .votes .total,
 .question .votes .total {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+.answer .votes .actions,
 .question .votes .actions {
   width: 20px;
   display: inline-block;
@@ -209,10 +213,12 @@
   color: #0266B3;
 }
 
+.answer .new-comment,
 .question .new-answer {
   position: absolute;
-  left: 43%;
+  left: 50%;
   bottom: -20px;
+  transform: translate(-50%, 0);
   padding: 10px;
   border: 1px solid #E5E5E5;
   border-radius: 0;
@@ -221,3 +227,77 @@
 }
 
 /**** End - Question detail ****/
+
+/**** Answers and comments ****/
+
+.peers-summary {
+  text-align: center;
+  font-family: 'PT Serif', serif;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.peers-summary .total {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: initial;
+}
+
+.question-detail .answer {
+  margin-bottom: 30px;
+  position: relative;
+  box-shadow: 4px -3px 3px -3px rgba(0,0,0,0.2);
+}
+
+.question-detail .answer .row {
+  display: flex;
+}
+
+.question-detail .answer .row > div {
+  background: #FFF;
+}
+
+.question-detail .answer .row .info .row > div {
+  padding-top: 10px;
+}
+
+.question-detail .answer .info {
+  min-height: 80px;
+  background: #FFF;
+}
+
+.question-detail .answer .avatar {
+  min-height: 80px;
+  text-align: center;
+  border-right: 1px solid #E5E5E5;
+}
+
+.question-detail .answer .avatar img {
+  width: 60px;
+}
+
+.question-detail .answer .info .action {
+  color: #A394A5;
+  margin: 0 5px;
+}
+
+.question-detail .answer .text {
+  padding-bottom: 30px;
+}
+
+.question-detail .answer .time {
+  font-family: 'PT Serif', serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.question-detail .comment {
+  border-top: 1px solid #E5E5E5;
+}
+
+.question-detail .comment .info .row > div:first-child {
+  background: #FBFBFB;
+}
+
+/**** End - Answers and comments ****/

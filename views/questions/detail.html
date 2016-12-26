@@ -47,5 +47,82 @@
       </div>
       <a href="#" class="btn btn-default new-answer" role="button">GIVE new answer</a>
     </div>
+
+    <p class="peers-summary">
+      <span class="total">2</span>
+      peers already answered {{ question.author.name }}
+    </p>
+
+    <div ng-repeat="answer in question.answers" class="container answer">
+      <div class="row">
+        <div class="col-sm-9 info">
+         <div class="row">
+            <div class="col-sm-2 avatar">
+              <a href="#">
+                <img ng-src="{{ answer.author.avatarUrl }}" class="img-circle">
+              </a>
+            </div>
+            <div class="col-sm-10">
+              <p>
+                <a href="#" class="author">{{ answer.author.name }}</a>
+                <span class="action">commented it &#9679;</span>
+                <span class="time">yesterday</span>
+              </p>
+              <p class="text">{{ answer.text }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="votes">
+            <span class="total">{{ answer.votes }}</span> upvotes
+            <div class="actions">
+              <a href="#">
+                <span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span>
+              </a>
+              <a href="#">
+                <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div ng-repeat="comment in answer.comments" class="row comment">
+        <div class="col-sm-9 info">
+          <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-2 avatar">
+              <a href="#">
+                <img ng-src="{{ comment.author.avatarUrl }}" class="img-circle">
+              </a>
+            </div>
+            <div class="col-sm-8">
+              <p>
+                <a href="#" class="author">{{ comment.author.name }}</a>
+                <span class="action">commented it &#9679;</span>
+                <span class="time">yesterday</span>
+              </p>
+              <p class="text">{{ comment.text }}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="votes">
+            <span class="total">{{ comment.votes }}</span> upvotes
+            <div class="actions">
+              <a href="#">
+                <span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span>
+              </a>
+              <a href="#">
+                <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn btn-default new-comment" role="button">
+        <span ng-show="answer.comments.length > 0">CONTINUE discussion</span>
+        <span ng-hide="answer.comments.length > 0">COMMENT</span>
+      </a>
+    </div>
   </div>
 </div>
