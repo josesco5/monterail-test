@@ -48,7 +48,7 @@
       <a href="#" class="btn btn-default new-answer" role="button">GIVE new answer</a>
     </div>
 
-    <p class="peers-summary">
+    <p class="peers-summary" ng-show="question.answer.length > 0">
       <span class="total">2</span>
       peers already answered {{ question.author.name }}
     </p>

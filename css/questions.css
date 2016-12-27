@@ -171,6 +171,7 @@
   max-width: 1000px;
   height: 100%;
   margin: 0 auto;
+  padding-bottom: 30px;
 }
 
 .question-detail .question {
