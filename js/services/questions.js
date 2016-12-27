@@ -6,7 +6,14 @@ angular.module('questionsApp')
     return {
       all: function(options) {
         return $q(function(resolve, reject) {
-          var result = $filter('limitTo')(questions, pageSize);
+          var orderField;
+          if (options.orderBy == 'recent') {
+            orderField = 'createdAt';
+          } else {
+            orderField = 'votes';
+          }
+          var ordered = $filter('orderBy')(questions, orderField, true);
+          var result = $filter('limitTo')(ordered, pageSize);
           resolve(result);
         });
       },
