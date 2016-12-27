@@ -13,7 +13,8 @@ angular.module('questionsApp')
             orderField = 'votes';
           }
           var ordered = $filter('orderBy')(questions, orderField, true);
-          var result = $filter('limitTo')(ordered, pageSize);
+          var filtered = $filter('filter')(ordered, {title: options.query});
+          var result = $filter('limitTo')(filtered, pageSize);
           resolve(result);
         });
       },
