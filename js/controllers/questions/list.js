@@ -23,11 +23,28 @@ angular.module('questionsApp')
     };
 
     $scope.search = function() {
+      // Reseting page value
+      $scope.options.page = 1;
+
       Questions.all($scope.options)
         .then(function(data) {
           $scope.questions = data;
         });
     };
+
+    $scope.moreQuestions = function() {
+      var options = angular.copy($scope.options);
+      options.page++;
+      Questions.all(options)
+        .then(function(data) {
+          if (data.length > 0) {
+            angular.forEach(data, function(value, key) {
+              $scope.questions.push(value);
+            });
+            $scope.options.page++;
+          }
+        });
+    }
 
     $scope.search();
   });

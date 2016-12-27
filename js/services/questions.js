@@ -14,7 +14,8 @@ angular.module('questionsApp')
           }
           var ordered = $filter('orderBy')(questions, orderField, true);
           var filtered = $filter('filter')(ordered, {title: options.query});
-          var result = $filter('limitTo')(filtered, pageSize);
+          var beginIndex = (options.page - 1) * pageSize;
+          var result = $filter('limitTo')(filtered, pageSize, beginIndex);
           resolve(result);
         });
       },
