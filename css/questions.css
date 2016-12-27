@@ -16,7 +16,7 @@
 
 .question .info,
 .question .user-actions {
-  height: 80px;
+  min-height: 80px;
   background: #DFF3FD;
   padding-top: 10px;
 }
@@ -28,6 +28,7 @@
 
 .question .info .avatar img {
   width: 60px;
+  background: #FFF;
 }
 
 .question .info .author,
@@ -178,6 +179,10 @@
   margin-bottom: 30px;
   position: relative;
   box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.2);
+}
+
+.question-detail .question > .row:first-child {
+  display: flex;
 }
 
 .question .user-actions {
