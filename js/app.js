@@ -1,5 +1,6 @@
 angular
   .module('questionsApp', [
+    'ui.bootstrap',
     'ui.router'
   ])
   .config(function ($stateProvider, $urlRouterProvider) {
