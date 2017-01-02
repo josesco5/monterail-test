@@ -1,5 +1,5 @@
 angular.module('questionsApp')
-  .controller('QuestionsListCtrl', function ($scope, Questions) {
+  .controller('QuestionsListCtrl', function ($scope, $uibModal, Questions) {
 
     $scope.questions = [];
 
@@ -44,7 +44,21 @@ angular.module('questionsApp')
             $scope.options.page++;
           }
         });
-    }
+    };
+
+    $scope.showProfile = function (user) {
+      $uibModal.open({
+        templateUrl: 'views/users/profile.html',
+        controller: 'ProfileCtrl',
+        size: 'lg',
+        windowClass: 'profile',
+        resolve: {
+          profile: function() {
+            return user;
+          }
+        }
+      });
+    };
 
     $scope.search();
   });

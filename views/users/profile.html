@@ -1,0 +1,110 @@
+<div class="modal-header">
+  <button type="button" class="close" aria-label="Close" ng-click="close()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="modal-body">
+  <div class="avatar">
+    <img ng-src="{{ profile.avatarUrl }}" class="img-circle">
+  </div>
+
+  <p class="name">{{profile.name}} {{profile.lastname}}</p>
+
+  <div class="row info">
+    <div class="col-sm-4">
+      <span class="user-label">MEMBER FOR</span>
+      5 months
+    </div>
+
+    <div class="col-sm-4 text-center">
+      <span class="user-label">LAST SEEN</span>
+      Saturday afternoon
+    </div>
+
+    <div class="col-sm-4 text-right">
+      <span class="user-label">ACTIVITY LEVEL</span>
+      <div class="rating">
+        <span class="glyphicon glyphicon-star active"></span>
+        <span class="glyphicon glyphicon-star active"></span>
+        <span class="glyphicon glyphicon-star"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="activities">
+    <div class="row">
+      <div class="col-sm-1">
+        <a href="#">
+          <span class="glyphicon glyphicon-menu-left control disabled"></span>
+        </a>
+      </div>
+      <div class="col-sm-10">
+        <h2 class="title">How it all started</h2>
+      </div>
+      <div class="col-sm-1 text-right">
+        <a href="#">
+          <span class="glyphicon glyphicon-menu-right control"></span>
+        </a>
+      </div>
+    </div>
+
+    <p class="subtitle">
+      That's where we have been these 5 months ago
+    </p>
+
+    <div class="summary">
+      <div class="item peers">
+        <h4 class="total">46</h4> peers
+        <div class="box"></div>
+      </div>
+      <div class="item discussions">
+        <h4 class="total">29</h4> discussions
+        <div class="box"></div>
+      </div>
+      <div class="item findings">
+        <h4 class="total">19</h4> findings
+        <div class="box"></div>
+      </div>
+      <div class="item user-questions">
+        <h4 class="total">10</h4> questions
+        <div class="box"></div>
+      </div>
+    </div>
+
+    <p class="subtitle">
+      Who joined the platform that same period
+    </p>
+
+    <div class="joined-row">
+      <div class="joined">
+        <div class="box"><img src="http://lorempixel.com/124/125/business/6/cc" class="img-circle"></div>
+        S.E.N. Waweru
+      </div>
+      <div class="joined">
+        <div class="box"><img src="http://lorempixel.com/125/125/people/9/cc" class="img-circle"></div>
+        Patricia
+      </div>
+      <div class="joined">
+        <div class="box"><img src="http://lorempixel.com/125/125/business/1/cc" class="img-circle"></div>
+        Joseph Aluoch
+      </div>
+    </div>
+
+    <p class="subtitle">
+      The hottest discussion these days
+    </p>
+
+    <div class="hottest">
+      <img src="http://lorempixel.com/124/125/business/6/cc" class="img-circle">
+      <p><span class="name">Andrew</span> FOUND THE GUARDIAN ARTICLE</p>
+      <h3 class="title"><a href="#">Vegan diet to stop diabetes progress</a></h3>
+      <div class="row summary">
+        <div class="col-sm-3"><span class="total">6</span> peers involved</div>
+        <div class="col-sm-3"><span class="total">3</span> related discussion</div>
+        <div class="col-sm-3"><span class="total">3</span> conversations</div>
+        <div class="col-sm-3"><span class="total">19</span> upvotes</div>
+      </div>
+    </div>
+  </div>
+</div>

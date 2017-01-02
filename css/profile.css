@@ -1,0 +1,189 @@
+.profile .modal-header {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.profile .modal-body {
+  padding: 0 60px 15px;
+}
+
+.profile .avatar {
+  text-align: center;
+}
+
+.profile .avatar img {
+  width: 80px;
+}
+
+.profile .name {
+  text-align: center;
+  color: #026DCE;
+  font-size: 12pt;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.profile .info {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #A7A9AC;
+  margin-bottom: 10px;
+}
+
+.profile .info span {
+  color: #A394A5;
+}
+
+.profile .info .user-label {
+  margin-right: 10px;
+}
+
+.profile .rating {
+  display: inline-block;
+}
+
+.profile .rating .active {
+  color: #FA8B81;
+}
+
+.profile .activities .title {
+  margin-top: 0;
+  text-align: center;
+  font-style: italic;
+  font-family: 'PT Serif', serif;
+}
+
+.profile .activities .subtitle {
+  text-align: center;
+  color: #A394A5;
+  text-transform: uppercase;
+  margin: 20px;
+}
+
+.profile .activities .control {
+  background: #0266B9;
+  border-radius: 50%;
+  padding: 5px;
+  color: #FFF;
+}
+
+.profile .activities .control.disabled {
+  background: #A7A9AC;
+}
+
+.profile .activities .summary {
+  width: 400px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.profile .activities .summary .item {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  position: relative;
+  z-index: 4;
+  font-family: 'PT Serif', serif;
+  font-style: italic;
+  margin-right: 10px;
+}
+
+.profile .activities .summary .total {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: normal;
+}
+
+.profile .activities .summary .box {
+  background: #E5F5FD;
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.profile .activities .summary .peers .box {
+  transform: rotate(52deg);
+}
+
+.profile .activities .summary .discussions .box {
+  transform: rotate(-14deg);
+}
+
+.profile .activities .summary .findings .box {
+  transform: rotate(56deg);
+}
+
+.profile .activities .summary .user-questions .box {
+  transform: rotate(12deg);
+}
+
+.profile .activities .joined-row {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.profile .activities .joined {
+  width: 80px;
+  display: inline-block;
+  margin: 0 6px;
+  color: #026DCE;
+  font-weight: bold;
+}
+
+.profile .activities .joined .box {
+  background: repeating-linear-gradient(45deg, #E7E7E7, #E7E7E7 1px, #FFF 1px, #FFF 4px);
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+}
+
+.profile .activities .joined .box img {
+  width: 60px;
+  margin-top: 10px;
+}
+
+.profile .activities .hottest {
+  background: repeating-linear-gradient(45deg, #E7E7E7, #E7E7E7 1px, #FFF 1px, #FFF 4px);
+  margin: 40px -60px 15px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: #A394A5;
+}
+
+.profile .activities .hottest img {
+  width: 60px;
+  margin-top: -30px;
+}
+
+.profile .activities .hottest .name {
+  color: #026DCE;
+  font-weight: bold;
+}
+
+.profile .activities .hottest .title {
+  font-family: 'PT Serif', serif;
+  font-weight: bold;
+}
+
+.profile .activities .hottest .title a {
+  color: #026DCE;
+}
+
+.profile .activities .hottest .summary {
+  max-width: 750px;
+  margin: 0 auto;
+  color: #000;
+  font-size: 12pt;
+  font-family: 'PT Serif', serif;
+  font-style: italic;
+  font-weight: bold;
+  width: 100%;
+}
+
+.profile .activities .hottest .summary .total {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: normal;
+}
