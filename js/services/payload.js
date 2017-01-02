@@ -28,7 +28,7 @@ angular.module('questionsApp')
             "createdAt": "2016-04-14T01:17:58Z",
             "author": {
               "name": "Patricia",
-              "avatarUrl": "http://lorempixel.com/124/125/business/7/cc"
+              "avatarUrl": "http://lorempixel.com/125/125/people/9/cc"
             },
             "votes": 8,
             "comments": [

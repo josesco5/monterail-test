@@ -1,6 +1,20 @@
 angular.module('questionsApp')
-  .controller('QuestionDetailCtrl', function ($scope, $state, $stateParams, Questions) {
+  .controller('QuestionDetailCtrl', function ($scope, $state, $stateParams, $uibModal, Questions) {
     $scope.question = {};
+
+    $scope.showProfile = function (user) {
+      $uibModal.open({
+        templateUrl: 'views/users/profile.html',
+        controller: 'ProfileCtrl',
+        size: 'lg',
+        windowClass: 'profile',
+        resolve: {
+          profile: function() {
+            return user;
+          }
+        }
+      });
+    };
 
     Questions.get($stateParams.id)
       .then(function(data) {
