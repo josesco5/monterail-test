@@ -16,6 +16,14 @@ angular.module('questionsApp')
       });
     };
 
+    $scope.upvote = function (item) {
+      item.votes++;
+    };
+
+    $scope.downvote = function (item) {
+      item.votes--;
+    };
+
     Questions.get($stateParams.id)
       .then(function(data) {
         $scope.question = data;

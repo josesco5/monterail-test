@@ -187,8 +187,9 @@
 }
 
 .question .user-actions {
-  text-align: center;
+  text-align: right;
   padding-top: 20px;
+  padding-right: 35px;
 }
 
 .question .description {
@@ -198,7 +199,7 @@
 
 .answer .votes,
 .question .votes {
-  text-align: center;
+  text-align: right;
   padding-top: 15px;
   color: #000;
   font-family: 'PT Serif', serif;

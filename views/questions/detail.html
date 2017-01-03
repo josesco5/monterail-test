@@ -33,12 +33,15 @@
         </div>
         <div class="col-sm-3">
           <div class="votes">
-            <span class="total">{{ question.votes }}</span> upvotes
+            <span class="total">{{ question.votes | absoluteValue }}</span>
+            <span ng-show="question.votes > 0">upvotes</span>
+            <span ng-show="question.votes == 0">votes</span>
+            <span ng-show="question.votes < 0">downvotes</span>
             <div class="actions">
-              <a href="#">
+              <a href ng-click="upvote(question)">
                 <span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span>
               </a>
-              <a href="#">
+              <a href ng-click="downvote(question)">
                 <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
               </a>
             </div>
@@ -74,12 +77,15 @@
         </div>
         <div class="col-sm-3">
           <div class="votes">
-            <span class="total">{{ answer.votes }}</span> upvotes
+            <span class="total">{{ answer.votes | absoluteValue }}</span>
+            <span ng-show="answer.votes > 0">upvotes</span>
+            <span ng-show="answer.votes == 0">votes</span>
+            <span ng-show="answer.votes < 0">downvotes</span>
             <div class="actions">
-              <a href="#">
+              <a href ng-click="upvote(answer)">
                 <span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span>
               </a>
-              <a href="#">
+              <a href ng-click="downvote(answer)">
                 <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
               </a>
             </div>
@@ -107,12 +113,15 @@
         </div>
         <div class="col-sm-3">
           <div class="votes">
-            <span class="total">{{ comment.votes }}</span> upvotes
+            <span class="total">{{ comment.votes | absoluteValue }}</span>
+            <span ng-show="comment.votes > 0">upvotes</span>
+            <span ng-show="comment.votes == 0">votes</span>
+            <span ng-show="comment.votes < 0">downvotes</span>
             <div class="actions">
-              <a href="#">
+              <a href ng-click="upvote(comment)">
                 <span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span>
               </a>
-              <a href="#">
+              <a href ng-click="downvote(comment)">
                 <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
               </a>
             </div>
